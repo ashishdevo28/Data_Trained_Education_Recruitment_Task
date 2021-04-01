@@ -1,0 +1,8 @@
+!pip install pandas
+pandas
+
+!pip install numpy
+numpy
+
+!pip install plotly
+plotly
