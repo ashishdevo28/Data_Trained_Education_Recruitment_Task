@@ -1,4 +1,4 @@
-# DataTrained Education Recruitment Task
+# Data Trained Education Recruitment Task
 
 ## Tasks:
 
