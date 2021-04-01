@@ -6,4 +6,4 @@
 - [ ] MySQL
 - [X] WebScaping
 - [X] Statistics
-- [ ] Machine Learning
+- [x] Machine Learning
