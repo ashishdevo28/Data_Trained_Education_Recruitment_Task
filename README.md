@@ -3,7 +3,7 @@
 ## Tasks:
 
 - [x] Python
-- [ ] MySQL
+- [x] MySQL
 - [X] WebScaping
 - [X] Statistics
 - [x] Machine Learning
