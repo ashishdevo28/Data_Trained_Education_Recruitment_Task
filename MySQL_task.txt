@@ -1,2 +1,33 @@
-ALTER TABLE T1
-  ORDER_BY 
+CREATE TABLE T1 (
+    Cust_id varchar(1),
+    Metric varchar(255),
+    Value varchar(255)
+);
+
+INSERT INTO T1
+VALUES ('A', 'Sales', 10);
+INSERT INTO T1
+VALUES ('B', 'Sales', 34);
+INSERT INTO T1
+VALUES ('C', 'Sales', 76);
+INSERT INTO T1
+VALUES ('D', 'Sales', 6);
+INSERT INTO T1
+VALUES ('A', 'Units', 2);
+INSERT INTO T1
+VALUES ('B', 'Units', 21);
+INSERT INTO T1
+VALUES ('C', 'Units', 62);
+INSERT INTO T1
+VALUES ('D', 'Units', 86);
+
+CREATE VIEW T2 as (
+    SELECT
+        Cust_id,
+        sum( if( Metric = 'Sales', Value, 0 ) ) AS Sales,
+        sum( if( Metric = 'Units', Value, 0 ) ) AS Units
+    FROM T1
+    GROUP BY Cust_id
+);
+
+SELECT * from T2;
